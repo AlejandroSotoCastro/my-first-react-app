@@ -5,19 +5,20 @@ import Title from './components/Title';
 function App() {
   return (
     <div className="App">
-      <Title title="Hola"></Title>
+      
       <header className="App-header">
+      <Title title="Shot Industries"></Title>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://relaxed-darwin-3a8386.netlify.app"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Making Humans Greag Again
         </a>
       </header>
     </div>
