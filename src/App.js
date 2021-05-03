@@ -36,35 +36,22 @@ const all_pokemon = [
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <main>
-          <Title title="Shot Industries" />
-
-          {all_pokemon.map((pokemon, index) => (
+    <main className="container">
+      <Title content="Some Simple Title" />
+      <div className="row">
+        {all_pokemon.map((pokemon, index) => (
+          <div key={index} className="col-md-6 col-lg-4">
             <Pokemon
-              key={index}
               name={pokemon.name}
               weight={pokemon.weight}
               awesome={pokemon.awesome}
               terrifying={pokemon.terrifying}
               abilities={pokemon.abilities}
             />
-          ))}
-        </main>
-
-        <img src={logo} className="App-logo" alt="logo" />
-
-        <a
-          className="App-link"
-          href="https://relaxed-darwin-3a8386.netlify.app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Making Humans Great Again
-        </a>
-      </header>
-    </div>
+          </div>
+        ))}
+      </div>
+    </main>
   );
 }
 
